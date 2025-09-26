@@ -121,7 +121,7 @@ input {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(100, 108, 255, 0.8);
 }
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
