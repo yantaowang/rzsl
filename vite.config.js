@@ -4,10 +4,11 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/rzsl/', // 重要：GitHub Pages 需要相对路径
+  base: '/rzsl/', // 确保这是正确的仓库名称
   build: {
     outDir: 'dist',
-    emptyOutDir: true // 构建前清空输出目录
+    emptyOutDir: true,
+    assetsDir: '.', // 将静态资源放在根目录
   },
   server: {
     port: 3000
